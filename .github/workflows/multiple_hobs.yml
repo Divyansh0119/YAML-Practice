@@ -1,0 +1,17 @@
+name: Multiple Jobs
+
+on: push
+
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - run: echo "Job1"
+    
+    job2:
+        runs-on: ubuntu-latest
+
+        steps:
+            - run: echo "Job2"
+        
